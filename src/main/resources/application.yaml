@@ -1,3 +1,11 @@
 spring:
   application:
     name: ch4-aws
+  profiles:
+    default: local
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
